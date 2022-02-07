@@ -10,10 +10,10 @@ const cors = require("cors");
 app.use(cors());
 app.options("*", cors());
 // to recive data from form
-//to recive
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 const PROD_URL =  process.env.PRODUCTION_URL;
+console.log(PROD_URL)
 
 //const mongourl = "mongodb://localhost:27017"
 const mongourl = "mongodb+srv://balu3704:Balu3704@cluster0.3rynh.mongodb.net/zomato?retryWrites=true&w=majority"
