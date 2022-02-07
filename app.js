@@ -10,6 +10,7 @@ const cors = require("cors");
 app.use(cors());
 app.options("*", cors());
 // to recive data from form
+//to recive
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 const PROD_URL =  process.env.PRODUCTION_URL;
